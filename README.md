@@ -20,7 +20,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 This Sprint Challenge is split into three parts:
 
-- [ ] Implement a data structure called a ring buffer (more details below)
+- [X] Implement a data structure called a ring buffer (more details below)
 - [ ] Optimizing some inefficient code
 - [ ] Reversing the contents of a singly linked list
 
