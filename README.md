@@ -22,7 +22,7 @@ This Sprint Challenge is split into three parts:
 
 - [X] Implement a data structure called a ring buffer (more details below)
 - [X] Optimizing some inefficient code
-- [ ] Reversing the contents of a singly linked list
+- [X] Reversing the contents of a singly linked list
 
 ### Minimum Viable Product
 
