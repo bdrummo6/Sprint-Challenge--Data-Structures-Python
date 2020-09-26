@@ -1,3 +1,4 @@
+
 class RingBuffer:
     def __init__(self, capacity):
         self.storage = []  # list for holding items
