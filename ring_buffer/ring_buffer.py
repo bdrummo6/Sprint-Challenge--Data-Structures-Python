@@ -14,7 +14,7 @@ class RingBuffer:
             # if capacity is reached then overwrite values in the buffer with newly added items
             self.storage[self.curr_index] = item
 
-        # calculate the new current index
+        # calculate the new current index, example capacity = 4 index = 3 + 1, 4 % 4 = 0, so index goes back to start
         self.curr_index = (self.curr_index + 1) % self.capacity
 
     # Method for retrieving all the items in a RingBuffer and returning them in a list
@@ -29,3 +29,17 @@ class RingBuffer:
         # return a list of the values currently in the buffer
         return temp
 
+
+rb = RingBuffer(5)  # Initialize a Ringbuffer with capacity set at 5
+
+rb.append(7)  # 7
+rb.append(14)  # 7 14
+rb.append(21)  # 7 14 21
+rb.append(28)  # 7 14 21 28
+rb.append(35)  # 7 14 21 28 35 (Capacity met)
+
+rb.append(42)  # 42 14 21 28 35
+rb.append(49)  # 42 49 21 28 35
+rb.append(56)  # 42 49 56 28 35
+
+print(rb.get())  # Should print: [42, 49, 56, 28, 35]
