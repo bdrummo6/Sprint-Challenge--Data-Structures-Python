@@ -17,15 +17,15 @@ duplicates = []  # Return the list of duplicates in this data structure
 # Create Binary Search Tree and initialize the root node with the first line in list names_1
 bst_names1 = BSTNode(names_1[0])
 
-# loop through names_1 and insert each line into the bst_names1
+# loop through names_1 and insert each line into the bst_names1 (total time: O(n log n))
 for name_1 in names_1:
-    bst_names1.insert(name_1)
+    bst_names1.insert(name_1)  # Linear Time O(n)
 # loop through names_2 and check if each name is in bst_names1
 for name_2 in names_2:
     # Use the BST contain method to check if name_2 is in bst_names1
-    if bst_names1.contains(name_2):
+    if bst_names1.contains(name_2):  # Log Time O(log n)
         # if the name is in both list then append the name to duplicates
-        duplicates.append(name_2)
+        duplicates.append(name_2)  # Constant Time O(1)
 
 """
 # Original code best runtime out of 3 was 6.940738677978516 seconds (64 duplicates)
@@ -43,5 +43,5 @@ print(f"runtime: {end_time - start_time} seconds")
 
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
-# What's the best time you can accomplish?  Thare are no restrictions on techniques or data
+# What's the best time you can accomplish?  There are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
