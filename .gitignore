@@ -2,3 +2,9 @@
 node_modules
 *.pyc
 .vscode/
+.idea/.gitignore
+.idea/Sprint-Challenge--Data-Structures-Python.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml

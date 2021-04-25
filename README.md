@@ -20,9 +20,9 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 This Sprint Challenge is split into three parts:
 
-1. Implement a data structure called a ring buffer (more details below)
-2. Optimizing some inefficient code
-3. Reversing the contents of a singly linked list
+- [X] Implement a data structure called a ring buffer (more details below)
+- [X] Optimizing some inefficient code
+- [X] Reversing the contents of a singly linked list
 
 ### Minimum Viable Product
 
@@ -61,6 +61,8 @@ buffer.get()   # should return ['d', 'e', 'f']
 ***!Important!*** If you are running this using PowerShell by clicking on the green play button, you will get an error that `names1.txt` is not found.  To resolve this, run it, get the error, then `cd` into the `names` directory in the `python` terminal that opens in VSCode.
 
 Navigate into the `names` directory. Here you will find two text files containing 10,000 names each, along with a program `names.py` that compares the two files and prints out duplicate name entries. Try running the code with `python3 names.py`. Be patient because it might take a while: approximately six seconds on my laptop. What is the runtime complexity of this code?
+
+	- The original time complexity was quadratic time: O(n^2)
 
 Six seconds is an eternity so you've been tasked with speeding up the code. Your goal is to use one of the data structures we built out over the course of this week in order to optimize and improve on the runtime so that it's more efficient than O(n²).
 
